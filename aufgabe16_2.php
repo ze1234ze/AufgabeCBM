@@ -1,22 +1,55 @@
 <?php
 
-$a = $_POST['regen'];
-$b = $_POST['sonnenschein'];
-$c = $_POST['wolken'];
-$d = $_POST['hagel'];
-$e = $_POST['graupel'];
-$f = $_POST['schnee'];
-$g = $_POST['wind'];
+// 16. Für diese Übung erstellen Sie ein Formular, in dem Sie den Benutzer 
+//     um Eingaben zum Wetter in einem Monat seiner Wahl bitten. Zeigen Sie eine
+//     Reihe von Kontrollkästchen (Checkboxes) mit Wetterbedingungen an. 
+//     (Diese Werte sind: Regen, Sonnenschein, Wolken, Hagel, Graupel, Schnee, Wind.)
+//     Richten Sie das Formular so ein, dass ein Array aus den angekreuzten Elementen
+//     erstellt wird. Übersenden Sie Daten mit der POST-Methode.
+//     Als Nächstes durchlaufen Sie das Array, das Sie vom Benutzer erhalten haben,
+//     um eine Liste mit den Antworten des Benutzers auszugeben.
 
 
-$arr = array($a, $b, $c, $d, $e, $f, $g);
 
-foreach ($arr as $antwort){
-    
-    echo $antwort;
-  
+if (isset($_POST['wetter'])) 
+{
+    foreach ($_POST['wetter'] as $antwort)
+    {echo $antwort."<br />";}
+       
 }
+// print_r($_POST['wetter']); 
 
+
+
+
+// if (!empty($_POST) ) {
+
+
+//     $a = !empty($_POST['regen']);
+//     $b = !empty($_POST['sonnenschein']);
+//     $c = !empty($_POST['wolken']);
+//     $d = !empty($_POST['hagel']);
+//     $e = !empty($_POST['graupel']);
+//     $f = !empty($_POST['schnee']);
+//     $g = !empty($_POST['wind']);
+
+
+
+//     // var_dump($a, $b, $c, $d, $e, $f, $g);
+//     $arr = array($a, $b, $c, $d, $e, $f, $g);
+
+//     foreach ($arr as $arr2) {
+//     echo $arr2;
+// }
+// }
+//     foreach ($arr as $antwort) {
+
+//         echo $antwort;
+//     }
+
+// } else {
+//     echo "Bitte etwas eingeben!";
+// }
 // if (empty($a)) {
 //     $a1 = $a;
 // }
@@ -62,4 +95,3 @@ foreach ($arr as $antwort){
 //     Echo "Dein Wahl ist Wind!<br/>";
 // }else{
 //     Echo "Du hast nichts gewahlt!<br/>";
-// }

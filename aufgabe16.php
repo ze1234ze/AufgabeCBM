@@ -12,19 +12,19 @@
             Bitte geben Sie Ihren libliches Wetter ein.<br/>
 
 
-            <input type="checkbox" name="regen">
-            <label for="regen">Regen,</label><br>
-            <input type="checkbox" name="sonnenschein">
+            <input type="checkbox" name="wetter[]" value="Regen">
+            <label for="regen">Regen</label><br>
+            <input type="checkbox" name="wetter[]" value="Sonnenschein">
             <label for="sonnenschein">Sonnenschein</label><br>
-            <input type="checkbox" name="wolken">
+            <input type="checkbox" name="wetter[]" value="Wolken">
             <label for="wolken">Wolken</label><br>
-            <input type="checkbox" name="hagel">
+            <input type="checkbox" name="wetter[]" value="Hagel">
             <label for="hagel">Hagel</label><br>
-            <input type="checkbox" name="graupel">
+            <input type="checkbox" name="wetter[]" value="Graupel">
             <label for="graupel">Graupel</label><br>
-            <input type="checkbox" name="schnee">
+            <input type="checkbox" name="wetter[]" value="Schnee">
             <label for="schnee">Schnee</label><br>
-            <input type="checkbox" name="wind">
+            <input type="checkbox" name="wetter[]" value="Wind">
             <label for="wind">Wind</label><br>
           
 
